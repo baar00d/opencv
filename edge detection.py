@@ -9,6 +9,7 @@ while True:
     # it consist of all colors
     # saturation => intensity of that color
     # value => light
+    cv2.resize(frame, fx=0.5, fy=0.5, interpolation = cv2.INTER_LINEAR)
     hsv = cv2.cvtColor(frame,cv2.COLOR_BGR2HSV) # TO HSV format
 
 
