@@ -28,7 +28,7 @@ while True:
     smooth = cv2.filter2D(res, -1, kernel)
     cv2.imshow('smooth',smooth)
 
-    k = cv2.waitKey(5) & 0xFF
+    k = cv2.waitKey(6) & 0xFF
     if k==27:
         break
 cv2.destroyAllWindows()
